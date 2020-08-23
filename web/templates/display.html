@@ -8,7 +8,9 @@
 
 {% for i in ad %}
 <h1>hi</h1>{{i.name}}
-{{i.age}}
+{{i.age}}<a  href ='delete/{{i.pk}}'>delete</a>
+<br><a  href = "update/{{i.pk}}" >update</a>
+
 {% endfor %}
 
 

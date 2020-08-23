@@ -27,6 +27,6 @@ urlpatterns = [
     path('/delete_data/<str:pk>', views.delete_data),
     path('/create',views.crud),
     path('/display',views.viewall),
-    path('/update/<str:id>',views.updatetask),
-    path('/delete/<str:id>',views.delete)
+    path('/update/<str:id>',views.updatetask,name='update'),
+    path('/delete/<str:id>',views.delete,name='delete')
 ]
