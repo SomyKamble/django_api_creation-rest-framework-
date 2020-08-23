@@ -24,5 +24,9 @@ urlpatterns = [
     path('/path',views.modelserial),
     path('/put_data',views.put_data),
     path('/update_data/<str:pk>',views.update_data),
-    path('/delete_data/<str:pk>', views.delete_data)
+    path('/delete_data/<str:pk>', views.delete_data),
+    path('/create',views.crud),
+    path('/display',views.viewall),
+    path('/update/<str:id>',views.updatetask),
+    path('/delete/<str:id>',views.delete)
 ]
